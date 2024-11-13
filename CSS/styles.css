@@ -1,0 +1,302 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: 'Minecraft', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+a{
+    text-decoration: none; /* Quita la línea de subrayado */
+}
+
+nav, .logo, .menu, .iconos{
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    flex-direction: row; /* dirección VERTICAL de los elementos de la página */
+    width: 100vw;
+    height: 15vh;
+}
+
+nav{
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo, .iconos, .menu{
+    background-color: rgb(46, 43, 43);
+    width: 33vw;
+}
+
+.iconos{
+    width: 34vw;
+}
+
+.logo{
+    justify-content: normal;
+}
+
+#logo_icono{
+    margin-left: 50px;
+    margin-right: 25px;
+}
+
+h2{
+    color: rgb(238, 154, 45);
+    font-size: 30px;
+}
+
+h2:hover, li:hover{
+    color: rgb(255, 192, 72);
+}
+
+.fa-computer, .fa-tablet-screen-button, .fa-mobile-screen-button{
+    font-size: 45px;
+    margin-left: 30px;
+    color: rgb(238, 154, 45);
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+li{
+    margin-right: 1rem;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(238, 154, 45);
+}
+
+#seccion_inicio, #seccion_descargas, #seccion_funciones, #seccion_comentarios, #descargas_1, #descargas_2, #funciones_1, #funciones_2, #comentarios_1, #comentarios_2{
+    width: 100vw;
+    text-align: center;
+    border: 1px solid black;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    flex-direction: row;
+}
+
+#seccion_inicio{
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('/Recursos/IMG/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%; /* TAMAÑO DE LA IMAGEN */
+}
+
+#seccion_descargas{
+    height: 100vh;
+    background-image: url('/Recursos/IMG/background1.png');
+    background-size: 100% 100%; /* TAMAÑO DE LA IMAGEN */
+}
+
+#seccion_funciones{
+    height: 100vh;
+    background-image: url('/Recursos/IMG/background2.png');
+    background-size: 100% 100%; /* TAMAÑO DE LA IMAGEN */
+}
+
+#seccion_comentarios{
+    height: 100vh;
+    background: rgb(48, 59, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#descargas_1, #descargas_2, #funciones_1, #funciones_2, #mapaGoogle, #columnaDatos{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    flex-direction: column;
+}
+
+#columnaDatos{
+    flex-direction: row;
+}
+
+#datosContacto, #formulario_2{
+    width: 40vw;
+    height:  50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#formulario_2{
+    width: 60vw;
+    background: rgb(48, 59, 56);
+}
+
+.lista_2{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.fa-location-dot, .fa-file-lines{
+    font-size: 50px;
+    color: #bb3c09;
+}
+
+.li_titulo{
+    margin-bottom: 50px;
+}
+
+.li_titulo, .li_texto{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.input-group {
+    display: flex;
+    gap: 10px; /* Espacio entre los campos */
+}
+
+input, #Enviar{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #ea9a2d; /* Borde de los campos */
+    border-radius: 8px;
+    background-color: #f4f1d0; /* Fondo de los campos */
+    color: rgb(48, 59, 56); /* Texto oscuro */
+    text-align: center;
+    transition: 0.3s;
+}
+
+#Enviar:hover{
+    background-color: #d97c1e;
+    transition: 0.3s;
+}
+
+#cookie{
+    margin-top: 13rem;
+    width: 295px; /* TAMAÑO DEL BOTON EN PIXELES */
+    height: 288px; /* TAMAÑO DEL BOTON EN PIXELES */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer; /* cambio de cursor */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    transition: 2s;
+    background-image: url('/Recursos/IMG/cookie_spt.png');
+    background-size: 295px 288px; /* TAMAÑO DE LA IMAGEN */
+}
+
+#cookie:hover{
+    background-image: url('/Recursos/IMG/angry_cookie_spt.png');
+    background-size: 295px 288px; /* TAMAÑO DE LA IMAGEN */
+    background-repeat: no-repeat;
+}
+
+#valor-contador{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 4rem;
+}
+
+#delete, #mejora1, #mejora2, #segundos, #skins, #skin-change{
+    width: 14vw;
+    height: 8vh;
+    background: none;
+    background-image: url('/Recursos/IMG/boton_rectangular.png');
+    background-size: 100% 100%; /* TAMAÑO DE LA IMAGEN */
+    background-repeat: no-repeat;
+    border: 1px solid rgba(0, 0, 0, 0.534);
+    border-radius: 0.5rem;
+    cursor: pointer; /* cambio de cursor */
+    color: rgb(219, 196, 155);
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(238, 154, 45);
+}
+
+
+/* MODAL SKINS */
+
+#skins, #skin-change{
+    margin-right: 16px;
+}
+
+#modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* FONDO TRANSPARENTE PARA EL MODAL */
+}
+
+.contenido_modal{
+    width: 900px;
+    height: 600px;
+    padding: 1rem;
+    margin: 5rem auto;
+    border-radius: 0.4rem;
+    background: rgb(201, 240, 202); /* FONDO DEL CUADRADO MODAL */
+}
+
+.modal_titulo{
+    width: 900px;
+    height: 100px;
+}
+.modal_arriba, .modal_abajo{
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    flex-direction: row;
+    width: 900px;
+    height: 250px;
+}
+.modal_arriba_izq, .modal_abajo_izq{
+    width: 450px;
+    height: 250px;
+}
+.modal_arriba_der, .modal_abajo_der{
+    width: 450px;
+    height: 250px;
+}
+
+
+
+
+.cerrar_modal{
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    font-size: 2rem;
+}
+
+h4{
+    color: rgb(238, 154, 45);
+    font-size: 28px;
+    text-shadow: 1px 1px 0 rgb(72, 72, 72);
+}

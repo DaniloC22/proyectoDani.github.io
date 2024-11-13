@@ -1,0 +1,101 @@
+/* Ajustes para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+
+    .logo{
+        width: 25vw;
+    }
+    .iconos{
+        display: none;
+    }
+    .menu{
+        width: 75vw;
+    }
+
+    #logo_icono{
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    h2{
+        color: rgb(238, 154, 45);
+        font-size: 20px;
+    }
+
+    i.fa-computer, i.fa-tablet-screen-button, i.fa-mobile-screen-button {
+        display: none;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    #seccion_inicio, #seccion_descargas, #seccion_funciones, #seccion_comentarios {
+        height: auto; /* Hacer que las secciones se ajusten al contenido */
+    }
+
+    #cookie {
+        width: 29.5vw; /* Ajustado a vw */
+        height: 28.8vh;  /* Ajustado a vh */
+        background-size: 29.5vw 28.8vh; /* TAMAÑO DE LA IMAGEN */
+    }
+    #cookie:hover{
+        background-size: 29.5vw 28.8vh; /* TAMAÑO DE LA IMAGEN */
+    }
+
+    #formulario_2, .lista_2 {
+        width: 90%; /* Reducir el tamaño del formulario y lista */
+    }
+
+    #seccion_inicio{
+        background-size: 100% 100%; /* TAMAÑO DE LA IMAGEN */
+    }
+
+    #valor-contador {
+        font-size: 6.4vw;
+    }
+
+    #skins, #skin-change {
+        margin-right: 8px;
+    }
+
+    .contenido_modal {
+        width: 80vw;
+        height: auto;
+        padding: 1rem;
+        margin: 2rem auto;
+    }
+
+    .modal_titulo {
+        width: 100%;
+    }
+
+    .modal_arriba, .modal_abajo {
+        width: 100%;
+        height: auto; /* Ajuste automático según contenido */
+    }
+
+    .modal_arriba_izq, .modal_abajo_izq, .modal_arriba_der, .modal_abajo_der {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .fa-location-dot, .fa-file-lines{
+        font-size: 30px;
+    }
+    
+    .li_titulo{
+        margin-bottom: 30px;
+    }
+    
+    .li_titulo, .li_texto{
+        font-size: 20px;
+    }
+
+    input, #Enviar {
+        padding: 8px; /* Reducir el padding */
+        margin: 8px; /* Reducir el margen */
+        font-size: 16px; /* Reducir tamaño de la fuente */
+        width: 80%; /* Ajustar el tamaño a un porcentaje más pequeño */
+    }
+}
